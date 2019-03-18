@@ -28,8 +28,8 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
     console.log(`${server.name} listening on ${server.url}`);
 });
 const adapter = new botbuilder_1.BotFrameworkAdapter({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId: process.env.microsoftAppID,
+    appPassword: process.env.microsoftAppPassword
 });
 const conversationState = new botbuilder_1.ConversationState(blobStorage);
 const dialogs = new botbuilder_dialogs_1.DialogSet(conversationState.createProperty("dialogState"));
