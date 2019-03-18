@@ -1,0 +1,35 @@
+1. set up TS config
+2. npm init
+3. npm install botbuilder --save
+4. npm install typescript --save
+5. npm install restify --save
+6. npm install @types/restify --save
+
+-- Luis & QNA
+npm install botbuilder-ai --save
+
+
+-- chat down
+chatdown proactive.chat > proactive.transcript
+
+-- ludown
+ludown parse toqna --in qna.lu
+
+
+-- Qna maker setup
+--qnamaker init
+
+--init bot
+msbot init
+msbot connect qna
+msbot connect qna -n SampleWowQna -k 3146b147-a6df-4b99-b1aa-740402cd3b20 --subscriptionKe
+y 073f94b7-7212-4483-8e82-a5f31f5ac889 --endpointKey "d3f0d942-79d7-46cd-a327-8f28088384a4"
+--hostname "https://samplewowqna.azurewebsites.net/qnamaker" -b ./secondbot.bot
+msbot connect luis
+msbot connect blob
+
+--buidd typescript
+C:\NGBO_NEW_WS\SecondBot>node_modules\.bin\tsc.cmd -p c:\NGBO_NEW_WS\SecondBot\tsconfig.json
+
+APPID - 2ee48a72-2fd3-4b73-bf84-e1b57095b981
+APPPWD- zyhqBSNS4=uzgCSJ4494-{!
