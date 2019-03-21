@@ -69,3 +69,29 @@ server.post("/api/messages", (req, res) => {
     await bot.onTurn(context);
   });
 });
+
+
+/* 
+var bot = new builder.UniversalBot(connector, 
+  function (session) {
+      var reply = createEvent("changeBackground", session.message.text, session.message.address);
+      session.endDialog(reply);
+  }
+);
+
+const createEvent = (eventName, value, address) => {
+  var msg = new builder.Message().address(address);
+  msg.data.type = "event";
+  msg.data.name = eventName;
+  msg.data.value = value;
+  return msg;
+}
+
+bot.on("event", function (event) {
+  var msg = new builder.Message().address(event.address);
+  msg.data.textLocale = "en-us";
+  if (event.name === "buttonClicked") {
+      msg.data.text = "I see that you clicked a button.";
+  }
+  bot.send(msg);
+}) */

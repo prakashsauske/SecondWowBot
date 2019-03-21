@@ -33,3 +33,7 @@ C:\NGBO_NEW_WS\SecondBot>node_modules\.bin\tsc.cmd -p c:\NGBO_NEW_WS\SecondBot\t
 
 APPID - 2ee48a72-2fd3-4b73-bf84-e1b57095b981
 APPPWD- zyhqBSNS4=uzgCSJ4494-{!
+
++jbaFDA3DTTjTHVDyYtDzg==!Mco6rqi1zEuPVDmq7y02o825Eqs40+N33SyMKPoPa2c=
+
+U:\SoftWares\BotFramework-WebChat-master>C:\NGBO_NEW_WS\SecondBot>node_modules\.bin\tsc.cmd -p U:\SoftWares\BotFramework-WebChat-master\BotFramework-WebChat-master\tsconfig.json
